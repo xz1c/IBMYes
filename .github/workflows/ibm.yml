@@ -37,4 +37,5 @@ jobs:
         IBM_APP_NAME: ${{ secrets.IBM_APP_NAME }}
       run: |
         cf restart $IBM_APP_NAME
+        ./IBM_Cloud_CLI/ibmcloud cf install -v 6.52.0
         
