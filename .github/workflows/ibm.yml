@@ -8,7 +8,7 @@ on:
 
 jobs:
   ibm-cloud-restart:
-    runs-on: CCChieh/centos-common
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
@@ -39,6 +39,3 @@ jobs:
         IBM_APP_NAME: ${{ secrets.IBM_APP_NAME }}
       run: |
         ./IBM_Cloud_CLI/ibmcloud cf restart "$IBM_APP_NAME"
-
-       
-
